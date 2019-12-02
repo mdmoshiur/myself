@@ -7,25 +7,26 @@
 }
 
 .header{
-  height: 70px;
+  height: 55px;
   background: #000000;
   padding: 0 20px;
   color: #FFFFFF;
 }
 .logo{
-  margin-top: 8px;
+  margin-top: 0px;
   float: left;
 }
 
 .menu{
   float: right;
-  line-height: 70px;
+  line-height: 55px;
+  z-index: 50;
 }
 .menu a{
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0 10px;
+  padding-left: 10px;
   transition: 0.4s;
 }
 .show-menu-btn,.hide-menu-btn{
@@ -38,7 +39,7 @@
   float: right;
 }
 .show-menu-btn i{
-  line-height: 70px;
+  line-height: 55px;
 }
 .menu a:hover,
 .show-menu-btn:hover,
@@ -48,8 +49,13 @@
 
 #chk{
   position: absolute;
-  visibility: hidden;
+  visibility: none;
   z-index: -1111;
+}
+
+#clicked{
+  position: relative;
+  z-index: 10000;
 }
 
 @media screen and (max-width:1000px) {
@@ -83,15 +89,136 @@
 
 }
 
+/* NOTE: styles for educations */
+.timeline{
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 80%;
+}
+.timeline:before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 85%;
+  background: #088A08;
 
-.skillbar {
+}
+.timeline ul{
+  margin: 0;
+  padding: 0;
+}
+.timeline h3,p{
+  margin-bottom: 20px;
+}
+.timeline ul li{
+  list-style: none;
+  line-height: normal;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+.timeline ul li:nth-child(odd){
+  float: left;
+  text-align: right;
+  clear: both;
+}
+.timeline ul li:nth-child(even){
+  float: right;
+  text-align: left;
+  clear: both;
+}
+.timeline ul li:nth-child(odd):before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: -12px;
+  background: #DF0101;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #088A08;
+}
+.timeline ul li:nth-child(even):before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  left: -8px;
+  background: #DF0101;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #088A08;
+}
+.timeline ul li h3{
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #8A0886;
+}
+.timeline ul li:nth-child(odd) .time{
+  position: absolute;
+  top: 13px;
+  right: -150px;
+  margin: 0;
+  padding: 10px 20px;
+  background: #088A08;
+  color: #DF0101;
+  border-radius: 20px;
+}
+.timeline ul li:nth-child(even) .time{
+  position: absolute;
+  top: 13px;
+  left: -145px;
+  margin: 0;
+  padding: 10px 20px;
+  background: #088A08;
+  color: #DF0101;
+  border-radius: 20px;
+}
+
+/* NOTE: make it responsive now */
+@media screen and (max-width: 800px){
+  .timeline{
+    width: 100%;
+  }
+  .timeline:before{
+    left: 25px;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even){
+    width: 100%;
+    text-align: left;
+    margin-bottom: 35px;
+  }
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before{
+    top: -23px;
+    left: 17px;
+  }
+  .timeline ul li:nth-child(odd) .time,
+  .timeline ul li:nth-child(even) .time{
+    top: -32px;
+    left: 50px;
+    right: auto;
+  }
+}
+
+/* NOTE: finished educations style */
+
+
+
+/* NOTE: styles for skillbar */
+.skillbar{
   width: 80%;
   margin: auto;
 }
 
-.skillbar h1{
+.header-name{
   text-align: center;
-  margin: 40px 0 0 0;
+  margin: 40px 0px 0px 0px;
+  text-shadow: 2px 2px 4px #A4A4A4;
 }
 
 .skillbar h2{
@@ -119,6 +246,7 @@
   top: 0;
   z-index: -2;
   background: #757575;
+  border-radius: 15px;
 }
 
 .line:after{
@@ -133,6 +261,7 @@
   top: 0;
   left: 0;
   z-index: -1;
+  border-radius: 15px;
 }
 
 .line1:after{
@@ -163,7 +292,9 @@
   }
 }
 
+/* NOTE: skillbar style finished here */
 
+/* NOTE: styles for contact */
 .contact{
   position: absolute;
   width: 100%;
@@ -215,6 +346,7 @@
 }
 
 .send-btn{
+  width: 100%;
   background: #173EAC;
   text-align: center;
   padding: 15px;
@@ -238,4 +370,66 @@
   .msg{
     width: 95%;
   }
+}
+
+.footer-main-div{
+  width: auto;
+  height: auto;
+  margin: auto;
+  background: #2E2E2E;
+  padding: 32px;
+  margin-top: 64px;
+}
+.footer-social-icons{
+  width: auto;
+  height: auto;
+  margin: auto;
+
+}
+.footer-social-icons ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-social-icons ul li{
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 0px 15px;
+  border-radius: 100%;
+  background-color: #BDBDBD;
+}
+.footer-social-icons ul li:hover{
+  background: #A4A4A4;
+}
+.footer-social-icons ul li a{
+  font-size: 40px;
+}
+.fa-github{
+  color: #1C1C1C;
+}
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-linkedin{
+  color: #0e76a8;
+}
+.footer-social-icons ul li a i{
+  line-height: 64px;
+}
+.footer-copywrite{
+  text-align: center;
+  padding: 32px;
+  color: #2E9AFE;
+}
+
+.footer-copywrite a{
+  text-decoration: none;
+  color: #2E9AFE;
+}
+.footer-copywrite a:hover{
+  color: #A4A4A4;
+}
+.email{
+  margin-bottom: 16px;
 }

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Moshiur Rahman</title>
+    <!-- add icon link -->
+    <link rel = "icon" href ="circle-cropped.png" type = "image/x-icon">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale= 1">
     <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.css">
@@ -10,28 +12,74 @@
   <body>
 
   <div class="header">
-    <a href="#" class="logo"><img src="logo.png"></a>
+    <a href="#" class="logo"><img src="logo.png" height="55px"></a>
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
       <i class="fas fa-ellipsis-h"></i>
     </label>
-
     <ul class="menu">
-      <a href="#">Home</a>
+      <a href="index.html#home"><label for="chk">Home</label></a>
       <a href="#">Educations</a>
       <a href="index.html#skillbar">Skillbar</a>
       <a href="#">Experiance</a>
       <a href="#">Portfolio</a>
-      <a href="index.html#contact">Contact</a>
+      <label for="chk"><a href="index.html#contact">Contact</a></label>
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
       </label>
     </ul>
   </div>
 
+  <!-- educations timeline -->
+  <h1 class="header-name">Educations timeline</h1>
+  <div class="timeline">
+    <ul>
+      <li>
+        <div class="content">
+          <h3>Shatbeky Govt. Primary School</h3>
+          <p>started 2004 to 2007</p>
+        </div>
+        <div class="time">
+          <h4>2004-2007</h4>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>Sonahata High School</h3>
+          <p>I started secondary school in January 2007. I got a scholarship in JSC in the year of 2010. I passed SSC with GPA  5.0(without the help of 4th subject) from the science group.</p>
+        </div>
+        <div class="time">
+          <h4>2007-2013</h4>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>Govt. Azizul Haque College, Bogura</h3>
+          <p>I started secondary school in January 2007. I got a scholarship in JSC in the year of 2010. I passed SSC with GPA  5.0(without the help of 4th subject) from the science group.</p>
+        </div>
+        <div class="time">
+          <h4>2013-2015</h4>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>Rajshahi University of Engineering & Technology</h3>
+          <p>I started secondary school in January 2007. I got a scholarship in JSC in the year of 2010. I passed SSC with GPA  5.0(without the help of 4th subject) from the science group.</p>
+        </div>
+        <div class="time">
+          <h4>2016-2020</h4>
+        </div>
+      </li>
+      <div style="clear: both;">
+      </div>
+    </ul>
+
+  </div>
+
+<!--skillbar -->
   <div id="skillbar" class="skillbar">
-    <h1> Skills</h1>
-    <br><br>
+    <h1 class="header-name"> Skills</h1>
+    <br>
     <h2>C/C++</h2>
     <div class="line line1">90%</div>
     <h2>Java</h2>
@@ -44,23 +92,91 @@
     <div class="line line5">70%</div>
     <h2>Python</h2>
     <div class="line line6">85%</div>
-
   </div>
 
-  <div id="contact" class="contact">
-    <div class="contact-form">
-      <div class="input-fields">
-        <input type="text" class="input" name="name" placeholder="Name*">
-        <input type="text" class="input" name="email" placeholder="Email Address*">
-        <input type="text" class="input" name="phone" placeholder="Phone">
-        <input type="text" class="input" name="subject" placeholder="Subject">
-      </div>
-      <div class="msg">
-        <textarea placeholder="Message*"></textarea>
-        <div class="send-btn">Send</div>
+  <!--
+
+  <form delta-email="moshiur6789@gmail.com" action="https://script.google.com/macros/s/AKfycbw05FbHFZoLo1JVAyA10pFZeEgK6K9_1sleLBtqXa1QEwrvq3E/exec" method="post">
+    <div id="contact" class="contact">
+      <div class="contact-form">
+        <div class="input-fields">
+          <input type="text" class="input" name="name" id="name" placeholder="Name*">
+          <input type="text" class="input" name="email" id="email" placeholder="Email Address*">
+          <input type="text" class="input" name="phone" placeholder="Phone">
+          <input type="text" class="input" name="subject" placeholder="Subject">
+        </div>
+        <div class="msg">
+          <textarea name="message" id="message" placeholder="Message*"></textarea>
+          <button class="send-btn" type="submit">SEND</button>
+        </div>
       </div>
     </div>
+  </form>
+
+-->
+<!--
+<div id="contact-form">
+	<div>
+		<h1>Nice to Meet You!</h1>
+		<h4>Have a question or just want to get in touch? Let's chat.</h4>
+	</div>
+		<p id="failure">Oopsie...message not sent.</p>
+		<p id="success">Your message was sent successfully. Thank you!</p>
+
+		   <form delta-email="moshiur6789@gmail.com" action="https://script.google.com/macros/s/AKfycbzd_DFvg0DX_cIGgSX4Xx_QxA1AaBC-xj4o6eHx/exec" method="post">
+			<div>
+		      <label for="name">
+		      	<span class="required">Name: *</span>
+		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+		      </label>
+			</div>
+			<div>
+		      <label for="email">
+		      	<span class="required">Email: *</span>
+		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+		      </label>
+			</div>
+			<div>
+		      <label for="subject">
+		      <span>Subject: </span>
+			      <select id="subject" name="subject" tabindex="4">
+			         <option value="hello">Product Price Question</option>
+			         <option value="quote">Where are my dragons?!</option>
+			         <option value="general">- Valar Morghulis - </option>
+			      </select>
+		      </label>
+			</div>
+			<div>
+		      <label for="message">
+		      	<span class="required">Message: *</span>
+		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+		      </label>
+			</div>
+			<div>
+		      <button name="submit" type="submit" id="submit" >SEND</button>
+			</div>
+		   </form>
+
+	</div>
+-->
+
+
+
+  <!-- contact -->
+  <div id="contact" class="footer-main-div">
+    <div class="footer-social-icons">
+      <ul>
+        <li><a href="https://github.com/mdmoshiur" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.facebook.com/mdd.moshiur.rahman" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/md-moshiur-rahman-77b893162/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-copywrite">
+      <h2 class="email"><a href="mailto:moshiur1176@gmail.com" target="_blank" title="mail me">moshiur1176@gmail.com</a></h2>
+      <h2 class="copywrite">&copy;<em> 2019 Md. Moshiur Rahman</em></h2>
+    </div>
   </div>
+
 
   </body>
 </html>
