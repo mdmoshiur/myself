@@ -52,12 +52,6 @@
   color: #00FF00;
 }
 
-#chk{
-  position: absolute;
-  visibility: visible;
-  z-index: 1111;
-}
-
 @media screen and (max-width:1000px) {
   .show-menu-btn,.hide-menu-btn{
     display: block;
@@ -83,12 +77,6 @@
     top: 25px;
     right: 40px;
   }
-  /*
-  #chk:checked ~ .menu{
-    right: 0;
-  }
-  */
-
 }
 
 /* NOTE: styles for educations */
@@ -304,8 +292,10 @@
   height: auto;
   margin: auto;
   background: #2E2E2E;
-  padding: 32px;
+  padding-top: 32px;
+  padding-bottom: 15px;
   margin-top: 64px;
+
 }
 .footer-social-icons{
   width: auto;
@@ -322,7 +312,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  margin: 0px 15px;
+  margin: 0px 12px;
   border-radius: 100%;
   background-color: #BDBDBD;
 }
@@ -347,7 +337,7 @@
 }
 .footer-copywrite{
   text-align: center;
-  padding: 32px;
+  padding-top: 32px;
   color: #2E9AFE;
 }
 
@@ -360,4 +350,13 @@
 }
 .email{
   margin-bottom: 16px;
+}
+/* NOTE: for mobile view */
+@media screen and (max-width: 460px){
+  .email{
+    font-size: 5vw;
+  }
+  .copywrite{
+    font-size: 5vw;
+  }
 }
