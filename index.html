@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale= 1">
     <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="myScript.js" type="text/javascript"></script>
   </head>
   <body>
 
@@ -22,20 +23,26 @@
       <h1 style="color:#01DFD7;">U</h1>
       <h1 style="color:#FF0040;">R</h1>
     </a>
+    <!--
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
       <i class="fas fa-ellipsis-h"></i>
     </label>
-    <ul class="menu">
-      <a href="http://www.google.com">About</a>
-      <a href="index.html#educations">Educations</a>
-      <a href="index.html#skillbar">Skills</a>
-      <a href="#">Projects</a>
-      <a href="#">Portfolio</a>
-      <a href="index.html#contact">Contact</a>
+  -->
+  <div class="show-menu-btn" onclick="openNav()"><i class="fas fa-ellipsis-h"></i></div>
+    <ul id="menu" class="menu">
+      <a href="#" onclick="closeNav()">About</a>
+      <a href="index.html#educations" onclick="closeNav()">Educations</a>
+      <a href="index.html#skillbar" onclick="closeNav()">Skills</a>
+      <a href="#" onclick="closeNav()">Projects</a>
+      <a href="#" onclick="closeNav()">Portfolio</a>
+      <a href="index.html#contact" onclick="closeNav()">Contact</a>
+      <div class="hide-menu-btn" onclick="closeNav()"><i class="fas fa-times"></i></div>
+      <!--
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
       </label>
+    -->
     </ul>
   </div>
 
@@ -185,7 +192,6 @@
       <h2 class="copywrite">&copy;<em> 2019 Md. Moshiur Rahman</em></h2>
     </div>
   </div>
-
 
   </body>
 </html>
