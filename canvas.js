@@ -5,10 +5,11 @@ var h = 0.9*window.innerHeight;
 canvas.width = w;
 canvas.height = h;
 
+
 //colors
 var colors = ['#FF0000', '#01DF01', '#0101DF', '#FF0040', '#000000','#2EFEF7','#B404AE','#fff','#FFFF00'];
 //Turn transparency on
-c.globalAlpha = .2;
+c.globalAlpha = 0.3;
 
 function Circle(x, y, radius, dx, dy, fillColor){
   this.x = x;
@@ -60,3 +61,7 @@ function animate(){
 }
 
 animate();
+c.font = "30px Comic Sans MS";
+c.fillStyle = "red";
+c.textAlign = "center";
+c.fillText("hello world",w/2,h/2);
