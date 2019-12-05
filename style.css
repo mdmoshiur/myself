@@ -79,6 +79,18 @@
   }
 }
 
+/* NOTE: styles for about section */
+.about {
+  width: auto;
+  height: 100%;
+}
+#canvas{
+  width: 100%;
+  height: 100%;
+  background: #D8D8D8;
+  margin: 0 auto;
+}
+
 /* NOTE: styles for educations */
 .timeline{
   position: relative;
@@ -318,7 +330,6 @@
 }
 .footer-social-icons ul li:hover{
   cursor: pointer;
-  background-color: #6E6E6E;
 }
 .footer-social-icons ul li a{
   font-size: 40px;
