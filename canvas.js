@@ -4,6 +4,7 @@ var w = window.innerWidth;
 var h = 0.9*window.innerHeight;
 canvas.width = w;
 canvas.height = h;
+
 //colors
 var colors = ['#FF0000', '#01DF01', '#0101DF', '#FF0040', '#000000','#2EFEF7','#B404AE','#fff','#FFFF00'];
 //Turn transparency on

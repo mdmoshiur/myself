@@ -79,19 +79,32 @@
   }
 }
 
-
 /* NOTE: styles for about section */
-.about {
-  width: auto;
-  height: 100%;
+.about{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  z-index: 1;
 }
+.about h1{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+}
+.profile-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
 #canvas{
   width: 100%;
   height: 100%;
   background: #D8D8D8;
-  margin: 0 auto;
 }
-
 
 /* NOTE: styles for educations */
 .timeline{
