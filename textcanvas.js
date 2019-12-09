@@ -44,6 +44,10 @@ img.onload = function() {
 }
 
 //draw lines
+ct.font = "3vw Comic Sans MS";
+ct.fillStyle = "#000000";
+ct.textAlign = "center";
+var textHeight = parseInt(ct.font)*1.15; //find line height
 ct.fillText("Hello, I'm Md. Moshiur Rhaman,", x, y);
 ct.fillText("a student & software developer from Bangladesh.", x, y + textHeight);
 ct.fillText("Please take a look around!", x, y + 2.0*textHeight);
