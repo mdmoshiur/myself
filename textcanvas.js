@@ -22,9 +22,11 @@ var y = h2/2.0 + imgRadius;
 //for image y
 var imgX = x - imgRadius;
 var imgY = y - imgSize - textHeight-2;
-
-window.onload = function() {
-  var img = document.getElementById("profile");
+//take image source
+var img = new Image();
+img.src = "image.jpg";
+img.onload = function() {
+  //var img = document.getElementById("profile");
   // Save the context so we can undo the clipping region at a later time
   //ct.save();
 
