@@ -6,7 +6,7 @@ textcanvas.width = w2;
 textcanvas.height = h2;
 
 //text styles
-ct.font = '3vw "Comic Sans MS"';
+ct.font = '3vw "Arial Black"';
 ct.fillStyle = "#000000";
 ct.textAlign = "center";
 var textHeight = parseInt(ct.font)*1.15; //find line height
